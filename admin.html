@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Churrasqueto Kehlen</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+    <!-- Login Screen -->
+    <div id="loginScreen" class="login-screen">
+        <div class="login-card">
+            <div class="login-logo">🔥</div>
+            <h1>Administration</h1>
+            <p>Churrasqueto Kehlen</p>
+            <form id="loginForm">
+                <input type="password" id="passwordInput" placeholder="Mot de passe" required>
+                <p id="loginError" class="error"></p>
+                <button type="submit" class="btn-login">Se connecter</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="adminPanel" class="admin-panel" style="display: none;">
+        <header class="admin-header">
+            <h1>🔥 Admin Churrasqueto</h1>
+            <button id="logoutBtn" class="btn-logout">Déconnexion</button>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="menu">📋 Menu Semaine</button>
+            <button class="tab-btn" data-tab="gallery">🍽️ Photos Plats</button>
+            <button class="tab-btn" data-tab="events">🎉 Photos Événements</button>
+        </div>
+
+        <!-- Menu Tab -->
+        <div id="menuTab" class="tab-content active">
+            <div class="upload-section">
+                <h2>📋 Menu de la Semaine</h2>
+                <div class="step-guide">
+                    <div class="step"><span>📸</span> 1. Photo</div>
+                    <div class="step"><span>📤</span> 2. Upload</div>
+                    <div class="step"><span>✨</span> 3. Fini!</div>
+                </div>
+
+                <label class="upload-label">
+                    <input type="file" id="menuUpload" accept="image/*" class="file-input">
+                    <span class="upload-btn">📤 Changer le Menu</span>
+                </label>
+
+                <div id="menuProgress" class="progress-container" style="display: none;">
+                    <div class="progress-bar"></div>
+                </div>
+
+                <div id="menuSuccess" class="success" style="display: none;">✅ Menu mis à jour !</div>
+            </div>
+
+            <div class="preview-section">
+                <h3>Menu Actuel</h3>
+                <div id="menuPreview" class="preview-box">
+                    <img id="menuImage" src="assets/images/meat-skewer.jpg" alt="Menu">
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Tab -->
+        <div id="galleryTab" class="tab-content">
+            <div class="upload-section">
+                <h2>🍽️ Ajouter Photo Plats/Restaurant</h2>
+
+                <label class="upload-label">
+                    <input type="file" id="galleryUpload" accept="image/*" class="file-input">
+                    <span class="upload-btn">➕ Ajouter une photo</span>
+                </label>
+
+                <div id="gallerySuccess" class="success" style="display: none;">✅ Photo ajoutée !</div>
+            </div>
+
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery images will be loaded here -->
+                <p class="placeholder">Les photos seront chargées depuis Firebase</p>
+            </div>
+        </div>
+
+        <!-- Events Tab -->
+        <div id="eventsTab" class="tab-content">
+            <div class="upload-section">
+                <h2>🎉 Ajouter Photo Événement</h2>
+
+                <label class="upload-label">
+                    <input type="file" id="eventsUpload" accept="image/*" class="file-input">
+                    <span class="upload-btn">➕ Ajouter une photo</span>
+                </label>
+
+                <div id="eventsSuccess" class="success" style="display: none;">✅ Photo ajoutée !</div>
+            </div>
+
+            <div class="gallery-grid" id="eventsGrid">
+                <!-- Event images will be loaded here -->
+                <p class="placeholder">Les photos seront chargées depuis Firebase</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+
+</html>
