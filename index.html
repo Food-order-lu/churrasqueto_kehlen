@@ -31,19 +31,19 @@
       </a>
 
       <nav id="nav">
-        <a href="#accueil">Accueil</a>
-        <a href="#menu">Rodízio & Carte</a>
-        <a href="#evenements">Événements</a>
-        <a href="#galerie">Galerie</a>
-        <a href="#contact">Contact</a>
+        <a href="#accueil" data-i18n="nav.home">Accueil</a>
+        <a href="#menu" data-i18n="nav.menu">Rodízio & Carte</a>
+        <a href="#evenements" data-i18n="nav.events">Événements</a>
+        <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
 
       <div class="header-right">
         <div class="lang-switch">
-          <button class="active">FR</button>
-          <button>PT</button>
+          <button class="active" data-lang="fr">FR</button>
+          <button data-lang="pt">PT</button>
         </div>
-        <a href="tel:+352621333444" class="btn btn-primary">Réserver</a>
+        <a href="tel:+352621333444" class="btn btn-primary" data-i18n="btn.reserve_header">Réserver</a>
         <button class="menu-toggle" id="menuToggle" aria-label="Menu">
           <span></span>
           <span></span>
@@ -56,20 +56,21 @@
   <!-- Mobile Navigation -->
   <div class="nav-mobile" id="navMobile">
     <button class="close-btn" id="closeNav">&times;</button>
-    <a href="#accueil">Accueil</a>
-    <a href="#menu">Rodízio & Carte</a>
-    <a href="#evenements">Événements</a>
-    <a href="#galerie">Galerie</a>
-    <a href="#contact">Contact</a>
-    <a href="tel:+352621333444" class="btn btn-primary">Réserver</a>
+    <a href="#accueil" data-i18n="nav.home">Accueil</a>
+    <a href="#menu" data-i18n="nav.menu">Rodízio & Carte</a>
+    <a href="#evenements" data-i18n="nav.events">Événements</a>
+    <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+    <a href="tel:+352621333444" class="btn btn-primary" data-i18n="btn.reserve_header">Réserver</a>
   </div>
 
   <!-- Hero Section -->
   <section id="accueil" class="hero">
     <div class="hero-content">
-      <h1>Churrasqueto Picanha</h1>
-      <h2>Rodízio brésilien à volonté au Luxembourg</h2>
-      <p>Picanha, rodízio complet, plats brésiliens et organisation d'événements à Kehlen</p>
+      <h1 data-i18n="hero.title">Churrasqueto Picanha</h1>
+      <h2 data-i18n="hero.subtitle">Rodízio brésilien à volonté au Luxembourg</h2>
+      <p data-i18n="hero.description">Picanha, rodízio complet, plats brésiliens et organisation d'événements à Kehlen
+      </p>
 
       <div class="hero-buttons">
         <a href="tel:+352621333444" class="btn btn-primary">
@@ -79,14 +80,14 @@
               d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
             </path>
           </svg>
-          Réserver une table
+          <span data-i18n="hero.btn_reserve">Réserver une table</span>
         </a>
         <a href="#menu" class="btn btn-outline">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M3 3h18M3 8h18M3 13h18M3 18h18"></path>
           </svg>
-          Voir le menu
+          <span data-i18n="hero.btn_menu">Voir le menu</span>
         </a>
       </div>
 
@@ -115,15 +116,16 @@
   <!-- Menu de la Semaine Section -->
   <section id="menu-semaine" class="menu-semaine-section">
     <div class="container">
-      <h2 class="section-title">Menu de la Semaine</h2>
-      <p class="section-subtitle">Découvrez nos plats du jour, mis à jour chaque semaine</p>
+      <h2 class="section-title" data-i18n="menu_semaine.title">Menu de la Semaine</h2>
+      <p class="section-subtitle" data-i18n="menu_semaine.subtitle">Découvrez nos plats du jour, mis à jour chaque
+        semaine</p>
 
       <div class="menu-semaine-container">
         <div class="menu-semaine-image" id="menuSemaineImage">
           <img src="assets/images/meat-skewer.jpg" alt="Menu de la semaine" id="weeklyMenuImg">
           <div class="menu-badge">
             <span>📋</span>
-            <span>Cette semaine</span>
+            <span data-i18n="menu_semaine.this_week">Cette semaine</span>
           </div>
         </div>
       </div>
@@ -136,7 +138,7 @@
               d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
             </path>
           </svg>
-          Réserver une table
+          <span data-i18n="hero.btn_reserve">Réserver une table</span>
         </a>
       </div>
     </div>
@@ -145,85 +147,86 @@
   <!-- Menu Section -->
   <section id="menu" class="menu-section">
     <div class="container">
-      <h2 class="section-title">Rodízio & Carte</h2>
+      <h2 class="section-title" data-i18n="menu.title">Rodízio & Carte</h2>
 
       <!-- Rodízio à Volonté -->
       <div class="menu-category">
-        <h3>Rodízio à Volonté</h3>
+        <h3 data-i18n="menu.rodizio_volonte">Rodízio à Volonté</h3>
         <div class="menu-grid">
           <div class="menu-card">
-            <h4>Rodízio Complet</h4>
+            <h4 data-i18n="menu.rod_complet">Rodízio Complet</h4>
             <div class="price">37.50€</div>
-            <p>Toutes les viandes à volonté avec buffet de salades et accompagnements</p>
+            <p data-i18n="menu.rod_complet_desc">Toutes les viandes à volonté avec buffet de salades et accompagnements
+            </p>
           </div>
           <div class="menu-card">
-            <h4>Rodízio Picanha</h4>
+            <h4 data-i18n="menu.rod_picanha">Rodízio Picanha</h4>
             <div class="price">48.50€</div>
-            <p>Notre spécialité : la meilleure picanha servie à volonté</p>
+            <p data-i18n="menu.rod_picanha_desc">Notre spécialité : la meilleure picanha servie à volonté</p>
           </div>
           <div class="menu-card">
-            <h4>Rodízio Brochette</h4>
+            <h4 data-i18n="menu.rod_brochette">Rodízio Brochette</h4>
             <div class="price">33.90€</div>
-            <p>Sélection de brochettes variées avec accompagnements</p>
+            <p data-i18n="menu.rod_brochette_desc">Sélection de brochettes variées avec accompagnements</p>
           </div>
           <div class="menu-card">
-            <h4>Rodízio Enfant</h4>
+            <h4 data-i18n="menu.rod_enfant">Rodízio Enfant</h4>
             <div class="price">22.50€</div>
-            <p>Menu enfant jusqu'à 12 ans avec dessert inclus</p>
+            <p data-i18n="menu.rod_enfant_desc">Menu enfant jusqu'à 12 ans avec dessert inclus</p>
           </div>
         </div>
       </div>
 
       <!-- Plats à base de crevettes et morue -->
       <div class="menu-category">
-        <h3>Plats à base de crevettes et morue</h3>
+        <h3 data-i18n="menu.seafood_title">Plats à base de crevettes et morue</h3>
         <div class="menu-grid">
           <div class="menu-card">
-            <h4>Crevettes grillées</h4>
+            <h4 data-i18n="menu.shrimp_grilled">Crevettes grillées</h4>
             <div class="price">31.50€</div>
-            <p>Crevettes géantes grillées avec riz et sauce épicée</p>
+            <p data-i18n="menu.shrimp_grilled_desc">Crevettes géantes grillées avec riz et sauce épicée</p>
           </div>
           <div class="menu-card">
-            <h4>Crevettes à l'ail</h4>
+            <h4 data-i18n="menu.shrimp_garlic">Crevettes à l'ail</h4>
             <div class="price">30.00€</div>
-            <p>Crevettes sautées à l'ail avec légumes du jour</p>
+            <p data-i18n="menu.shrimp_garlic_desc">Crevettes sautées à l'ail avec légumes du jour</p>
           </div>
           <div class="menu-card">
-            <h4>Morue à la braise</h4>
+            <h4 data-i18n="menu.cod_braise">Morue à la braise</h4>
             <div class="price">31.00€</div>
-            <p>Filet de morue grillé avec pommes de terre et légumes</p>
+            <p data-i18n="menu.cod_braise_desc">Filet de morue grillé avec pommes de terre et légumes</p>
           </div>
           <div class="menu-card">
-            <h4>Bacalhau à Brás</h4>
+            <h4 data-i18n="menu.cod_bras">Bacalhau à Brás</h4>
             <div class="price">30.50€</div>
-            <p>Recette traditionnelle portugaise de morue effilochée</p>
+            <p data-i18n="menu.cod_bras_desc">Recette traditionnelle portugaise de morue effilochée</p>
           </div>
         </div>
       </div>
 
       <!-- Formules de midi -->
       <div class="menu-category">
-        <h3>Formules de midi</h3>
+        <h3 data-i18n="menu.lunch_title">Formules de midi</h3>
         <div class="menu-grid">
           <div class="menu-card">
-            <h4>Menu Express</h4>
+            <h4 data-i18n="menu.lunch_express">Menu Express</h4>
             <div class="price">14.50€</div>
-            <p>Plat du jour + boisson</p>
+            <p data-i18n="menu.lunch_express_desc">Plat du jour + boisson</p>
           </div>
           <div class="menu-card">
-            <h4>Menu Complet</h4>
+            <h4 data-i18n="menu.lunch_complet">Menu Complet</h4>
             <div class="price">18.50€</div>
-            <p>Entrée + plat du jour + dessert</p>
+            <p data-i18n="menu.lunch_complet_desc">Entrée + plat du jour + dessert</p>
           </div>
           <div class="menu-card">
-            <h4>Menu Grill</h4>
+            <h4 data-i18n="menu.lunch_grill">Menu Grill</h4>
             <div class="price">22.50€</div>
-            <p>Viande grillée + accompagnements + boisson</p>
+            <p data-i18n="menu.lunch_grill_desc">Viande grillée + accompagnements + boisson</p>
           </div>
           <div class="menu-card">
-            <h4>Menu Premium</h4>
+            <h4 data-i18n="menu.lunch_premium">Menu Premium</h4>
             <div class="price">25.50€</div>
-            <p>Entrée + viande au choix + dessert + boisson</p>
+            <p data-i18n="menu.lunch_premium_desc">Entrée + viande au choix + dessert + boisson</p>
           </div>
         </div>
       </div>
@@ -234,7 +237,7 @@
   <!-- Events Section -->
   <section id="evenements" class="events-section">
     <div class="container">
-      <h2 class="section-title">Faça seu evento conosco</h2>
+      <h2 class="section-title" data-i18n="events.title">Faça seu evento conosco</h2>
 
       <div class="events-grid">
         <div class="event-card">
@@ -247,7 +250,7 @@
               <line x1="3" y1="10" x2="21" y2="10"></line>
             </svg>
           </div>
-          <h4>Événements</h4>
+          <h4 data-i18n="events.type_events">Événements</h4>
         </div>
         <div class="event-card">
           <div class="icon">
@@ -267,7 +270,7 @@
               </path>
             </svg>
           </div>
-          <h4>Fêtes</h4>
+          <h4 data-i18n="events.type_parties">Fêtes</h4>
         </div>
         <div class="event-card">
           <div class="icon">
@@ -277,7 +280,7 @@
                 d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z" />
             </svg>
           </div>
-          <h4>Anniversaires</h4>
+          <h4 data-i18n="events.type_birthdays">Anniversaires</h4>
         </div>
         <div class="event-card">
           <div class="icon">
@@ -288,7 +291,7 @@
               </path>
             </svg>
           </div>
-          <h4>Mariages</h4>
+          <h4 data-i18n="events.type_weddings">Mariages</h4>
         </div>
         <div class="event-card">
           <div class="icon">
@@ -300,7 +303,7 @@
               <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
           </div>
-          <h4>Événements d'entreprise</h4>
+          <h4 data-i18n="events.type_corporate">Événements d'entreprise</h4>
         </div>
         <div class="event-card">
           <div class="icon">
@@ -311,7 +314,7 @@
               </path>
             </svg>
           </div>
-          <h4>Baptêmes</h4>
+          <h4 data-i18n="events.type_baptisms">Baptêmes</h4>
         </div>
         <div class="event-card">
           <div class="icon">
@@ -321,7 +324,7 @@
               <path d="m16 10-4 4-4-4"></path>
             </svg>
           </div>
-          <h4>Communions</h4>
+          <h4 data-i18n="events.type_communions">Communions</h4>
         </div>
         <div class="event-card">
           <div class="icon">
@@ -332,14 +335,15 @@
               <circle cx="5" cy="12" r="1"></circle>
             </svg>
           </div>
-          <h4>Entre autres</h4>
+          <h4 data-i18n="events.type_others">Entre autres</h4>
         </div>
       </div>
 
       <div class="quote-container gradient-bg">
         <div class="quote-content">
-          <p class="quote-main">"Nous organisons tout, libérez vous."</p>
-          <p class="quote-subtitle">Du concept à la décoration, de la cuisine au service - nous prenons soin de chaque
+          <p class="quote-main" data-i18n="events.quote_main">"Nous organisons tout, libérez vous."</p>
+          <p class="quote-subtitle" data-i18n="events.quote_subtitle">Du concept à la décoration, de la cuisine au
+            service - nous prenons soin de chaque
             détail de votre événement</p>
         </div>
       </div>
@@ -350,7 +354,7 @@
             <path
               d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
           </svg>
-          Agendar seu evento pelo WhatsApp
+          <span data-i18n="events.btn_whatsapp">Agendar seu evento pelo WhatsApp</span>
         </a>
       </div>
 
@@ -374,43 +378,43 @@
   <!-- Gallery Section -->
   <section id="galerie" class="gallery-section">
     <div class="container">
-      <h2 class="section-title">Galerie</h2>
+      <h2 class="section-title" data-i18n="nav.gallery">Galerie</h2>
 
       <div class="gallery-grid">
         <div class="gallery-item">
           <img src="assets/images/event-green-table.jpg" alt="Table dressée avec nappes vertes">
           <div class="overlay">
-            <span>Décoration de table</span>
+            <span data-i18n="gallery.item1">Décoration de table</span>
           </div>
         </div>
         <div class="gallery-item">
           <img src="assets/images/event-balloons.jpg" alt="Décoration ballons verts et dorés">
           <div class="overlay">
-            <span>Décoration ballons</span>
+            <span data-i18n="gallery.item2">Décoration ballons</span>
           </div>
         </div>
         <div class="gallery-item">
           <img src="assets/images/event-birthday.jpg" alt="Anniversaire thème Stitch">
           <div class="overlay">
-            <span>Anniversaire enfant</span>
+            <span data-i18n="gallery.item3">Anniversaire enfant</span>
           </div>
         </div>
         <div class="gallery-item">
           <img src="assets/images/event-formal.jpg" alt="Événement formel noir et blanc">
           <div class="overlay">
-            <span>Soirée élégante</span>
+            <span data-i18n="gallery.item4">Soirée élégante</span>
           </div>
         </div>
         <div class="gallery-item">
           <img src="assets/images/party-interior-1.jpg" alt="Intérieur décoré pour fête">
           <div class="overlay">
-            <span>Ambiance festive</span>
+            <span data-i18n="gallery.item5">Ambiance festive</span>
           </div>
         </div>
         <div class="gallery-item">
           <img src="assets/images/party-interior-2.jpg" alt="Décoration intérieure">
           <div class="overlay">
-            <span>Espace événements</span>
+            <span data-i18n="gallery.item6">Espace événements</span>
           </div>
         </div>
       </div>
@@ -421,7 +425,7 @@
             <path
               d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
           </svg>
-          Agendar seu evento pelo WhatsApp
+          <span data-i18n="events.btn_whatsapp">Agendar seu evento pelo WhatsApp</span>
         </a>
       </div>
     </div>
@@ -430,7 +434,7 @@
   <!-- Contact Section -->
   <section id="contact" class="contact-section">
     <div class="container">
-      <h2 class="section-title">Infos & Contact</h2>
+      <h2 class="section-title" data-i18n="contact.title">Infos & Contact</h2>
 
       <div class="contact-wrapper">
         <div class="contact-image">
@@ -438,43 +442,43 @@
         </div>
 
         <div class="contact-info">
-          <h3>Nos horaires</h3>
+          <h3 data-i18n="contact.hours_title">Nos horaires</h3>
 
           <div class="hours-grid">
             <div class="hours-row">
-              <span class="day">Lundi</span>
-              <span class="time">Fermé</span>
-              <span class="time">Fermé</span>
+              <span class="day" data-i18n="days.monday">Lundi</span>
+              <span class="time" data-i18n="hours.closed">Fermé</span>
+              <span class="time" data-i18n="hours.closed">Fermé</span>
             </div>
             <div class="hours-row">
-              <span class="day">Mardi</span>
+              <span class="day" data-i18n="days.tuesday">Mardi</span>
               <span class="time">12:00 - 14:00</span>
               <span class="time">18:30 - 22:00</span>
             </div>
             <div class="hours-row">
-              <span class="day">Mercredi</span>
+              <span class="day" data-i18n="days.wednesday">Mercredi</span>
               <span class="time">12:00 - 14:00</span>
               <span class="time">18:30 - 22:00</span>
             </div>
             <div class="hours-row">
-              <span class="day">Jeudi</span>
+              <span class="day" data-i18n="days.thursday">Jeudi</span>
               <span class="time">12:00 - 14:00</span>
               <span class="time">18:30 - 22:00</span>
             </div>
             <div class="hours-row">
-              <span class="day">Vendredi</span>
+              <span class="day" data-i18n="days.friday">Vendredi</span>
               <span class="time">12:00 - 14:00</span>
               <span class="time">18:30 - 22:30</span>
             </div>
             <div class="hours-row">
-              <span class="day">Samedi</span>
+              <span class="day" data-i18n="days.saturday">Samedi</span>
               <span class="time">12:00 - 14:30</span>
               <span class="time">18:30 - 22:30</span>
             </div>
             <div class="hours-row">
-              <span class="day">Dimanche</span>
+              <span class="day" data-i18n="days.sunday">Dimanche</span>
               <span class="time">12:00 - 15:00</span>
-              <span class="time">Fermé</span>
+              <span class="time" data-i18n="hours.closed">Fermé</span>
             </div>
           </div>
 
@@ -532,24 +536,25 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-about">
-          <h3>Churrasqueto Picanha</h3>
-          <p>Restaurant brésilien authentique au Luxembourg. Venez découvrir notre rodízio à volonté, notre sélection de
+          <h3 data-i18n="footer.about_title">Churrasqueto Picanha</h3>
+          <p data-i18n="footer.about_text">Restaurant brésilien authentique au Luxembourg. Venez découvrir notre rodízio
+            à volonté, notre sélection de
             viandes grillées et notre ambiance chaleureuse. Nous organisons également vos événements privés.</p>
         </div>
 
         <div class="footer-links">
-          <h4>Navigation</h4>
+          <h4 data-i18n="footer.links_title">Navigation</h4>
           <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#menu">Rodízio & Carte</a></li>
-            <li><a href="#evenements">Événements</a></li>
-            <li><a href="#galerie">Galerie</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#accueil" data-i18n="nav.home">Accueil</a></li>
+            <li><a href="#menu" data-i18n="nav.menu">Rodízio & Carte</a></li>
+            <li><a href="#evenements" data-i18n="nav.events">Événements</a></li>
+            <li><a href="#galerie" data-i18n="nav.gallery">Galerie</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </div>
 
         <div class="footer-contact">
-          <h4>Contact</h4>
+          <h4 data-i18n="footer.contact_title">Contact</h4>
           <p>50, rue de Mamer</p>
           <p>8280 Kehlen, Luxembourg</p>
           <p>+352 621 333 444</p>
@@ -573,7 +578,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 Churrasqueto Picanha - Tous droits réservés</p>
+        <p data-i18n="footer.copy">© 2026 Churrasqueto Picanha - Tous droits réservés</p>
       </div>
     </div>
   </footer>
