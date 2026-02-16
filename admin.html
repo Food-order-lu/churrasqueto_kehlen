@@ -105,7 +105,19 @@
         </div>
     </div>
 
-    <script src="js/admin.js"></script>
+    <!-- Custom Delete Modal -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <h3>Confirmer la suppression</h3>
+            <p>Êtes-vous sûr de vouloir supprimer cette image ?</p>
+            <div class="modal-actions">
+                <button id="cancelDelete" class="btn-secondary">Annuler</button>
+                <button id="confirmDelete" class="btn-danger">Supprimer</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/admin.js"></script>
 </body>
 
 </html>
