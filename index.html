@@ -43,7 +43,9 @@
           <button class="active" data-lang="fr">FR</button>
           <button data-lang="pt">PT</button>
         </div>
-        <a href="tel:+352621333444" class="btn btn-primary" data-i18n="btn.reserve_header">Réserver</a>
+        <span class="glf-button btn btn-primary reservation" data-glf-cuid="007be73d-b1d3-4650-b9e2-6c74ac7ce46a"
+          data-glf-ruid="4b04996c-7b39-448f-9c1f-3301e97d3e84" data-glf-reservation="true"
+          data-i18n="btn.reserve_header">Réserver</span>
         <button class="menu-toggle" id="menuToggle" aria-label="Menu">
           <span></span>
           <span></span>
@@ -61,7 +63,9 @@
     <a href="#evenements" data-i18n="nav.events">Événements</a>
     <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
     <a href="#contact" data-i18n="nav.contact">Contact</a>
-    <a href="tel:+352621333444" class="btn btn-primary" data-i18n="btn.reserve_header">Réserver</a>
+    <span class="glf-button btn btn-primary reservation" data-glf-cuid="007be73d-b1d3-4650-b9e2-6c74ac7ce46a"
+      data-glf-ruid="4b04996c-7b39-448f-9c1f-3301e97d3e84" data-glf-reservation="true"
+      data-i18n="btn.reserve_header">Réserver</span>
   </div>
 
   <!-- Hero Section -->
@@ -73,7 +77,18 @@
       </p>
 
       <div class="hero-buttons">
-        <a href="tel:+352621333444" class="btn btn-primary">
+        <span class="glf-button btn btn-primary" data-glf-cuid="007be73d-b1d3-4650-b9e2-6c74ac7ce46a"
+          data-glf-ruid="4b04996c-7b39-448f-9c1f-3301e97d3e84">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+            <path d="M3 6h18"></path>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span data-i18n="btn.order_now">Commander</span>
+        </span>
+        <span class="glf-button btn btn-outline reservation" data-glf-cuid="007be73d-b1d3-4650-b9e2-6c74ac7ce46a"
+          data-glf-ruid="4b04996c-7b39-448f-9c1f-3301e97d3e84" data-glf-reservation="true">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path
@@ -81,14 +96,7 @@
             </path>
           </svg>
           <span data-i18n="hero.btn_reserve">Réserver une table</span>
-        </a>
-        <a href="#menu" class="btn btn-outline">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M3 3h18M3 8h18M3 13h18M3 18h18"></path>
-          </svg>
-          <span data-i18n="hero.btn_menu">Voir le menu</span>
-        </a>
+        </span>
       </div>
 
       <div class="hero-info">
@@ -131,7 +139,8 @@
       </div>
 
       <div class="menu-semaine-cta">
-        <a href="tel:+352621333444" class="btn btn-primary">
+        <span class="glf-button btn btn-primary reservation" data-glf-cuid="007be73d-b1d3-4650-b9e2-6c74ac7ce46a"
+          data-glf-ruid="4b04996c-7b39-448f-9c1f-3301e97d3e84" data-glf-reservation="true">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path
@@ -139,7 +148,7 @@
             </path>
           </svg>
           <span data-i18n="hero.btn_reserve">Réserver une table</span>
-        </a>
+        </span>
       </div>
     </div>
   </section>
@@ -584,6 +593,7 @@
   </footer>
 
   <!-- JavaScript -->
+  <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script>
   <script type="module" src="js/main.js"></script>
 </body>
 

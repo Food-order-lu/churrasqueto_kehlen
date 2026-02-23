@@ -978,3 +978,55 @@ footer {
   cursor: pointer;
   color: var(--text-primary);
 }
+
+/* ===================================
+   GLORIAFOOD BUTTONS CUSTOMIZATION
+   =================================== */
+.glf-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 9999px !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+  background: var(--primary) !important;
+  color: white !important;
+  text-transform: none !important;
+  line-height: 1.6 !important;
+  font-family: inherit !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+.glf-button:hover {
+  background: var(--primary-hover) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+header .glf-button {
+  padding: 0.5rem 1.25rem !important;
+  font-size: 0.875rem !important;
+}
+
+.hero .glf-button.btn-outline {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(8px) !important;
+  color: white !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.hero .glf-button.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: white !important;
+}
+
+.glf-button svg {
+  width: 20px !important;
+  height: 20px !important;
+  flex-shrink: 0 !important;
+}
