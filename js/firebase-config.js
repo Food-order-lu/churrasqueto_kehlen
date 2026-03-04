@@ -1,12 +1,11 @@
-// Firebase Configuration - Official Churrasqueto Lux
+// Firebase Configuration for Churrasqueto
 const firebaseConfig = {
-    projectId: "churrasqueto-lux",
-    appId: "1:503943535308:web:d8f829c2c8358a4f914069",
-    storageBucket: "churrasqueto-lux.firebasestorage.app",
     apiKey: "AIzaSyD5fE0WkHe7JLPW-1sDuzucTSTBpPJ7KjQ",
     authDomain: "churrasqueto-lux.firebaseapp.com",
+    projectId: "churrasqueto-lux",
+    storageBucket: "churrasqueto-lux.firebasestorage.app",
     messagingSenderId: "503943535308",
-    projectNumber: "503943535308"
+    appId: "1:503943535308:web:9eebf824f833c21a914069"
 };
 
 export default firebaseConfig;

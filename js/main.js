@@ -265,5 +265,54 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    async function loadFirebaseContent() {
+        // 1. Load Weekly Menu
+        try {
+            const menuDoc = await getDoc(doc(db, "config", "menu"));
+            if (menuDoc.exists()) {
+                const weeklyMenuImg = document.getElementById('weeklyMenuImg');
+                if (weeklyMenuImg) weeklyMenuImg.src = menuDoc.data().url;
+            }
+        } catch (e) {
+            console.log("No custom menu found, using default");
+        }
+
+        // 2. Load Gallery & Events Photos from Firestore
+        const loadPhotos = async (collectionName, containerSelector, isGallery = false) => {
+            const container = document.querySelector(containerSelector);
+            if (!container) return;
+
+            try {
+                const q = query(collection(db, collectionName), orderBy("createdAt", "desc"));
+                const snapshot = await getDocs(q);
+
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    const item = document.createElement('div');
+                    item.className = isGallery ? 'gallery-item' : 'events-photo-item';
+
+                    if (isGallery) {
+                        item.innerHTML = `
+                            <img src="${data.url}" alt="Galerie image">
+                            <div class="overlay">
+                                <span>Galerie</span>
+                            </div>
+                        `;
+                    } else {
+                        item.innerHTML = `<img src="${data.url}" alt="Événement image">`;
+                    }
+
+                    // Prepend to show newest first
+                    container.prepend(item);
+                });
+            } catch (e) {
+                console.error(`Error loading ${collectionName}:`, e);
+            }
+        };
+
+        await loadPhotos('gallery', '.gallery-grid', true);
+        await loadPhotos('events', '.events-photos-grid', false);
+    }
+
     loadFirebaseContent();
 });
